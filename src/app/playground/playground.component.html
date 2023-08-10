@@ -1,0 +1,12 @@
+<h1>Current player : {{player}}</h1>
+<button (click)="newGame()"> Start new game</button>
+
+<!-- structural directive -->
+<h2 *ngIf="isTheWinner"> Player {{isTheWinner}} won the game</h2>
+
+<main>
+    <!-- create a app-square component for each fill of playground array when you click on it  -->
+    <app-square *ngFor="let value of playground; let i = index" [sign]="value" (click)="makeMove(i)">
+
+    </app-square>
+</main>

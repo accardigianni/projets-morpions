@@ -3,3 +3,11 @@ button {
     height: 100%;
     font-size: 5em !important;
 }
+
+:host.app-square-x button {
+    background-color: rgb(18, 120, 204);
+}
+
+:host.app-square-o button {
+    background-color: rgb(223, 89, 89);
+}

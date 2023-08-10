@@ -1,8 +1,36 @@
 main {
     display: grid;
-    grid-template-columns: 200px 200px 200px;
+    justify-content: center;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
     gap: 0;
 
+
+}
+
+h1 {
+    margin-left: 200px;
+    margin-top: 20px;
+}
+
+h1.player-x {
+    color: rgb(18, 120, 204);
+}
+
+h1.player-o {
+    color: rgb(223, 89, 89);
+}
+
+div.winning-game {
+    margin-left: 200px;
+    margin-top: 20px;
+    color: green;
+}
+
+button {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
 }
 
 app-square {

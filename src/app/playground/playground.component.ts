@@ -6,9 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./playground.component.scss']
 })
 export class PlaygroundComponent implements OnInit {
-  playground!: any[];
+  playground!: ('X' | 'O' | null)[];
   xIsNext!: boolean;
-  isTheWinner!: any;
+  isTheWinner!: 'X' | 'O' | null;
 
   constructor() { } ngOnInit(): void {
     this.newGame();

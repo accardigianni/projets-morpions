@@ -14,5 +14,5 @@ export class SquareComponent {
 
   @Input()
   // ! promess of declare a sign
-  sign!: 'X' | 'O';
+  sign!:  'X' | 'O' | null;
 }
